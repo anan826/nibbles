@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Wed Feb 25 12:02:29 2026 as: /usr/lib/nmap/nmap --privileged -v -A -T5 -oA Init_nmap 10.129.240.183
+Nmap scan report for 10.129.240.183
+Host is up (0.26s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 c4:f8:ad:e8:f8:04:77:de:cf:15:0d:63:0a:18:7e:49 (RSA)
+|   256 22:8f:b1:97:bf:0f:17:08:fc:7e:2c:8f:e9:77:3a:48 (ECDSA)
+|_  256 e6:ac:27:a3:b5:a9:f1:12:3c:34:a5:5d:5b:eb:3d:e9 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.14, Linux 3.8 - 3.16
+Uptime guess: 0.008 days (since Wed Feb 25 11:51:50 2026)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 23/tcp)
+HOP RTT       ADDRESS
+1   885.05 ms 10.10.14.1
+2   885.15 ms 10.129.240.183
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 25 12:02:46 2026 -- 1 IP address (1 host up) scanned in 16.79 seconds
